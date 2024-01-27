@@ -6,8 +6,9 @@
        
         
     </style>
+    <script src="react-components/basic-container.js"></script>
     <script>
-        
+
         function showPage(filepath) {
             fetch(filepath)
                 .then(response => {
@@ -34,6 +35,7 @@
         <a href="#" onclick="showPage('pages/about.html')">About</a>
         <a href="#" onclick="showPage('pages/schedule.html')">Schedule</a>
         <a href="#" onclick="showPage('pages/contact.html')">Contact</a>
+        <a href="#" onclick="showPage('pages/react-components.html')">React Components</a>
     </div>
 
     <div class="content" id="pageContent">
