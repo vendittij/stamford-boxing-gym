@@ -9,9 +9,36 @@
             overflow: hidden;
         }
 
+        .navbar {
+            background-color: #353232;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
         .navbar a {
-            float: left;
-            display: block;
+            color: #e9e2e2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #e09494;
+        }
+
+        /* CSS for the content of each page */
+        .content {
+            padding: 20px;
+            background-color: #f1f1f1;
+            height: 100vh;
+            margin-top: 60px; /* Adjust this value to match the height of the navbar */
+        }
+
+        .navbar a {
             color: #e9e2e2;
             text-align: center;
             padding: 14px 16px;
@@ -31,6 +58,7 @@
         
     </style>
     <script>
+        
         function showPage(filepath) {
             fetch(filepath)
                 .then(response => {
@@ -52,7 +80,7 @@
     </script>
 </head>
 <body>
-    <div class="navbar">
+    <div id='navigation' class="navbar">
         <a href="#" onclick="showPage('pages/home.html')">Home</a>
         <a href="#" onclick="showPage('pages/about.html')">About</a>
         <a href="#" onclick="showPage('pages/schedule.html')">Schedule</a>

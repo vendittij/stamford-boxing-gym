@@ -23,6 +23,11 @@
   },
   "homepage": "https://github.com/vendittij/stamford-boxing-gym#readme",
   "dependencies": {
-    "http-server": "^14.1.1"
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.6",
+    "http-server": "^14.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
